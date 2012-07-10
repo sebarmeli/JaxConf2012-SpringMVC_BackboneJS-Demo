@@ -1,0 +1,43 @@
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+html{color:#000;background:#fff;font-family:Helvetica, Arial;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+#preLoad{           
+    width:100%;
+    height:100%;
+    background:#FFF;
+    position:absolute;
+    top:0;   
+     
+    -moz-transition: visibility 0s linear 1s, opacity 1s ease-in-out 0s;
+    -webkit-transition: visibility 0s linear 1s, opacity 1s ease-in-out 0s;       
+    -o-transition: visibility 0s linear 1s, opacity 1s ease-in-out 0s;
+    transition: visibility 0s linear 1s, opacity 1s ease-in-out 0s;
+}     
+ 
+#preLoad div{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    height:60px;
+    margin-top: -30px;
+    margin-left: -24px;
+}
+a {color:#fff; text-decoration:none;}
+h1{font-size:2.0em;color:yellow; padding:10px; text-align:center;}
+#top{width:100%; height:50px; background:#000 none; padding:10px;}
+#content{width:100%;padding-bottom:30px;background:#fff none;}
+.wrapper {margin:0px auto; width:100%; padding:10px 0px;}
+.wrapper div {padding:20px;text-align:center;}
+.wrapper div.img {margin:0px auto; width:200px;}
+.wrapper a, a.add {text-align:center; margin:0px auto; border-radius:10px;padding:10px;background:red none; text-decoration:none;font-size:1.3em; color:#fff;width:240px; display:block;}
+.wrapper a:hover, a.add:hover {background:green none;}
+#list a.add {margin: 10px auto;}
+#bottom {background:#ccc none; padding:10px;height:50px; position:fixed; bottom:0;left:0;width:100%;}
+#bottom p {font-size:1.0em; color:#fff;}
+
+#list UL LI{padding:20px 0px; border-bottom:5px #000 solid; background:#abc none; text-align:center;}
