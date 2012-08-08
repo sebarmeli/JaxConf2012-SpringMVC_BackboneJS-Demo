@@ -2,6 +2,7 @@ MyApp.Routers.AppRouter = Backbone.Router.extend({
 	routes : {
 		"" : "index",
 		"list" : "listContacts",
+		"list/:cid" : "detailContact",
 		"edit/:cid" : "editContact",
 		"add" : "newContact",
 		"*other" : "fourOfour"
@@ -42,6 +43,18 @@ MyApp.Routers.AppRouter = Backbone.Router.extend({
 		
 		new MyApp.Views.NewContact({
 			model: new MyApp.Models.Contact
+		}).render();
+	},
+
+	detailContact : function(cId) {
+		this.redirect();
+
+		$('.page').hide();
+		$('#contact').show();
+		
+		var singleModel = MyApp.contactsCollection.getByCid(cId);
+		new MyApp.Views.DetailContact({
+			model: singleModel
 		}).render();
 	},
 
